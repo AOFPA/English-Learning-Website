@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      h5,
+      h4 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: 'Kanit', sans-serif">
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="unit1.html" class="dropdown-item">UNIT 1</a>
+                        <a href="unit2.html" class="dropdown-item">UNIT 2</a>
+                        <a href="unit3.html" class="dropdown-item">UNIT 3</a>
+                        <a href="unit4.html" class="dropdown-item">UNIT 4</a>
+                        <a href="unit5.html" class="dropdown-item">UNIT 5</a>
+                        <a href="unit6.html" class="dropdown-item">UNIT 6</a>
+                    </div>
+                </div>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-danger">LISTENING UNIT 6</h5>
+          <h5 class="text-center">
+            ให้ผู้เรียนฟังเสียงจากวิดิโอ และเลือก 6 คำที่ผู้เรียนได้ยิน
+          </h5>
+
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <p class="text-center">:: VIDEO ::</p>
+              <div class="text-center">
+                <style>
+                    video {
+  width: 100%;
+  height: auto;
+}
+                </style>
+                <video  controls>
+                    <source src="File1/vd6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+              </div>
+            </div>
+        
+            <form action="" method="POST" id="formListening">
+              <div class="row">
+                <div class="col-lg-12 mt-5">
+                  <h5>1. เลือกคำตอบที่ผู้เรียนได้ยินจากวิดิโอ 6 คำ</h5>
+                </div>
+               
+                <div class="col-lg-2 mt-2">
+                  Balanced diet
+                  <input
+                    type="checkbox"
+                    id="Balanced"
+                    name="Balanced"
+                    value="Balanced"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  stretch
+                  <input
+                    type="checkbox"
+                    id="August"
+                    name="August"
+                    value="August"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  bike riding
+                  <input
+                    type="checkbox"
+                    id="bike"
+                    name="bike"
+                    value="bike"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  fresh air
+                  <input
+                    type="checkbox"
+                    id="December"
+                    name="December"
+                    value="December"
+                  />
+                </div>
+
+              
+                <div class="col-lg-2 mt-2">
+                  gym
+                  <input
+                    type="checkbox"
+                    id="January"
+                    name="January"
+                    value="January"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  eat right
+                  <input
+                    type="checkbox"
+                    id="eat"
+                    name="eat"
+                    value="eat"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                    meditate
+                  <input
+                    type="checkbox"
+                    id="July"
+                    name="July"
+                    value="July"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  swimming
+                  <input
+                    type="checkbox"
+                    id="March"
+                    name="March"
+                    value="March"
+                  />
+                </div>
+
+              
+                <div class="col-lg-2 mt-2">
+                  execise
+                  <input
+                    type="checkbox"
+                    id="execise"
+                    name="execise"
+                    value="execise"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  healthy
+                  <input
+                    type="checkbox"
+                    id="healthy"
+                    name="healthy"
+                    value="healthy"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  inactive
+                  <input
+                    type="checkbox"
+                    id="May"
+                    name="May"
+                    value="May"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  yoga
+                  <input
+                    type="checkbox"
+                    id="yoga"
+                    name="yoga"
+                    value="yoga"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-5">
+                ส่งคำตอบ
+              </button>
+            </form>
+          </div>
+          <form action="" method="POST" id="formListening2">
+          <div class="row mt-3">
+              <div class="col-lg-12">
+                  <div>
+                    <h5>2. ทดสอบการฟังให้ผู้เรียนเลือกคำตอบที่ดีที่สุด</h5>
+
+                  </div>
+                  
+              </div>
+
+              <div class="col-lg-12">
+                  <p>1. ____ thinks people should execise.</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Briana</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Alan"
+                name="Alan"
+                value="Alan"
+              /> <span> &nbsp Alan
+            </span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Thanksgiving"
+                name="Thanksgiving"
+                value="Thanksgiving"
+              /> <span> &nbsp Danny
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>2. ____ thinks people should spend time with their friends.</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="February"
+                name="February"
+                value="February"
+              /> <span> &nbsp Danny</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Briana"
+                name="Briana"
+                value="Briana"
+              /> <span> &nbsp Briana
+            </span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Gabby"
+                name="Gabby"
+                value="Gabby"
+              /> <span> &nbsp Gabby
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>3. ____ thinks people should get plenty of sleep.</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Danny1"
+                name="Danny1"
+                value="Danny1"
+              /> <span> &nbsp Danny</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="father"
+                name="father"
+                value="father"
+              /> <span> &nbsp Julianna
+            </span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Gabby"
+                name="Gabby"
+                value="Gabby"
+              /> <span> &nbsp Gabby
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>4. ____ thinks being happy is the most important thing.</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="SeptemberAns"
+                name="SeptemberAns"
+                value="SeptemberAns"
+              /> <span> &nbsp Gabby</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Danny1"
+                name="Danny1"
+                value="Danny1"
+              /> <span> &nbsp Danny
+            </span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Julianna
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>5. ____thinks people should drink lots of water</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="before"
+                name="before"
+                value="before"
+              /> <span> &nbsp Alan</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Danny2"
+                name="Danny2"
+                value="Danny2"
+              /> <span> &nbsp Danny
+            </span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Briana
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>6. ____ doesn't think people should eat a lot of fried food.</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Danny3"
+                name="Danny3"
+                value="Danny3"
+              /> <span> &nbsp Danny</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Briana
+            </span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Gabby
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+          </div>
+          <button type="submit" class="btn btn-primary mt-5">
+            ส่งคำตอบ
+          </button>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+      
+
+       
+        $("#formListening").submit(function (event) {
+          event.preventDefault();
+          var Balanced = $(
+            "input[name='Balanced']:checked"
+          ).val();
+          var bike = $(
+            "input[name='bike']:checked"
+          ).val();
+          var eat = $(
+            "input[name='eat']:checked"
+          ).val();
+          var execise = $(
+            "input[name='execise']:checked"
+          ).val();
+          var healthy = $(
+            "input[name='healthy']:checked"
+          ).val();
+          var yoga = $(
+            "input[name='yoga']:checked"
+          ).val();
+         
+         var scoreCheckbox = 0;
+          
+      
+          if (Balanced ==="Balanced") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (bike === "bike") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (eat === "eat") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (execise === "execise") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (healthy === "healthy") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (yoga === "yoga") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+         
+         
+
+       
+
+          swal(`คะแนนที่ได้ = ${scoreCheckbox} / 6`, ``, "success").then(
+            function () {}
+          );
+        //   alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+        $("#formListening2").submit(function (event) {
+          event.preventDefault();
+          var Alan = $(
+            "input[name='Alan']:checked"
+          ).val();
+          var Briana = $(
+            "input[name='Briana']:checked"
+          ).val();
+          var Gabby = $(
+            "input[name='Gabby']:checked"
+          ).val();
+          var Danny1 = $(
+            "input[name='Danny1']:checked"
+          ).val();
+          var Danny3 = $(
+            "input[name='Danny3']:checked"
+          ).val();
+          var Danny2 = $(
+            "input[name='Danny2']:checked"
+          ).val();
+        
+          
+       
+         var scoreCheckbox2 = 0;
+          
+      
+          if (Alan ==="Alan") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (Briana === "Briana") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (Gabby === "Gabby") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (Danny1 === "Danny1") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (Danny2 === "Danny2") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (Danny3 === "Danny3") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+         
+         
+
+       
+
+          swal(`คะแนนที่ได้ = ${scoreCheckbox2} / 6`, ``, "success").then(
+            function () {}
+          );
+        //   alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+
+      });
+
+     
+    </script>
+  </body>
+</html>

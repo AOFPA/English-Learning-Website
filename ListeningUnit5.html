@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      h5,
+      h4 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: 'Kanit', sans-serif">
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="unit1.html" class="dropdown-item">UNIT 1</a>
+                        <a href="unit2.html" class="dropdown-item">UNIT 2</a>
+                        <a href="unit3.html" class="dropdown-item">UNIT 3</a>
+                        <a href="unit4.html" class="dropdown-item">UNIT 4</a>
+                        <a href="unit5.html" class="dropdown-item">UNIT 5</a>
+                        <a href="unit6.html" class="dropdown-item">UNIT 6</a>
+                    </div>
+                </div>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-danger">LISTENING UNIT 5</h5>
+          <h5 class="text-center">
+            ให้ผู้เรียนฟังเสียงจากวิดิโอ และเลือกคำตอบที่ได้กล่าวถึงในวิดิโอ หรือคำที่ผู้เรียนได้ยินจากวิดิโอ
+          </h5>
+
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <p class="text-center">:: VIDEO ::</p>
+              <div class="text-center">
+                <style>
+                    video {
+  width: 100%;
+  height: auto;
+}
+                </style>
+                <video  controls>
+                    <source src="File1/vd5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+              </div>
+            </div>
+        
+            <form action="" method="POST" id="formListening">
+              <div class="row">
+                <div class="col-lg-12 mt-5">
+                  <h5>1. เลือกคำตอบที่ผู้เรียนได้ยินจากวิดิโอ</h5>
+                </div>
+               
+                <div class="col-lg-2 mt-2">
+                  April
+                  <input
+                    type="checkbox"
+                    id="April"
+                    name="April"
+                    value="April"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  August
+                  <input
+                    type="checkbox"
+                    id="August"
+                    name="August"
+                    value="August"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  Christmas
+                  <input
+                    type="checkbox"
+                    id="Christmas"
+                    name="Christmas"
+                    value="Christmas"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  December
+                  <input
+                    type="checkbox"
+                    id="December"
+                    name="December"
+                    value="December"
+                  />
+                </div>
+
+              
+                <div class="col-lg-2 mt-2">
+                  January
+                  <input
+                    type="checkbox"
+                    id="January"
+                    name="January"
+                    value="January"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  birthday
+                  <input
+                    type="checkbox"
+                    id="birthday"
+                    name="birthday"
+                    value="birthday"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                    July
+                  <input
+                    type="checkbox"
+                    id="July"
+                    name="July"
+                    value="July"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  March
+                  <input
+                    type="checkbox"
+                    id="March"
+                    name="March"
+                    value="March"
+                  />
+                </div>
+
+              
+                <div class="col-lg-2 mt-2">
+                  June
+                  <input
+                    type="checkbox"
+                    id="June"
+                    name="June"
+                    value="June"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  November
+                  <input
+                    type="checkbox"
+                    id="November"
+                    name="November"
+                    value="November"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  May
+                  <input
+                    type="checkbox"
+                    id="May"
+                    name="May"
+                    value="May"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  September
+                  <input
+                    type="checkbox"
+                    id="September"
+                    name="September"
+                    value="September"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-5">
+                ส่งคำตอบ
+              </button>
+            </form>
+          </div>
+          <form action="" method="POST" id="formListening2">
+          <div class="row mt-3">
+              <div class="col-lg-12">
+                  <div>
+                    <h5>2. ทดสอบการฟังให้ผู้เรียนเลือกคำตอบที่ดีที่สุด</h5>
+
+                  </div>
+                  
+              </div>
+
+              <div class="col-lg-12">
+                  <p>1. Why does Julianna like November?</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp It's beautiful.</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="Thanksgiving"
+                name="Thanksgiving"
+                value="Thanksgiving"
+              /> <span> &nbsp There's Thanksgiving.
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>2. What is Megumi's favorite month?</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="February"
+                name="February"
+                value="February"
+              /> <span> &nbsp February</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp January
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>3. Who has a birthday in February?</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Megumi's mother</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="father"
+                name="father"
+                value="father"
+              /> <span> &nbsp Megumi's father
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>4. When is Sahil's birthday?</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="SeptemberAns"
+                name="SeptemberAns"
+                value="SeptemberAns"
+              /> <span> &nbsp September</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp November
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>5. When is Tommy's birthday?</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="before"
+                name="before"
+                value="before"
+              /> <span> &nbsp a week before Christmas</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp a week after Christmas
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+              <!-- -------------------------------------------- -->
+              <div class="col-lg-12 mt-3">
+                  <p>5. Who likes December best?</p>
+                
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="TomAndGarry"
+                name="TomAndGarry"
+                value="TomAndGarry"
+              /> <span> &nbsp Tommy and Garry</span>
+              </div>
+              <div class="col-lg-12">
+                <input
+                type="checkbox"
+                id="September"
+                name="September"
+                value="September"
+              /> <span> &nbsp Sahil
+            </span>
+              </div>
+              <!-- -------------------------------------------- -->
+          </div>
+          <button type="submit" class="btn btn-primary mt-5">
+            ส่งคำตอบ
+          </button>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+      
+
+       
+        $("#formListening").submit(function (event) {
+          event.preventDefault();
+          var April = $(
+            "input[name='April']:checked"
+          ).val();
+          var August = $(
+            "input[name='August']:checked"
+          ).val();
+          var Christmas = $(
+            "input[name='Christmas']:checked"
+          ).val();
+          var December = $(
+            "input[name='December']:checked"
+          ).val();
+          var January = $(
+            "input[name='January']:checked"
+          ).val();
+          var birthday = $(
+            "input[name='birthday']:checked"
+          ).val();
+          var July = $(
+            "input[name='July']:checked"
+          ).val();
+          var March = $(
+            "input[name='March']:checked"
+          ).val();
+          
+          var June = $(
+            "input[name='June']:checked"
+          ).val();
+          var November = $(
+            "input[name='November']:checked"
+          ).val();
+          var September = $(
+            "input[name='September']:checked"
+          ).val();
+       
+         var scoreCheckbox = 0;
+          
+      
+          if (Christmas ==="Christmas") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (December === "December") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (birthday === "birthday") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (June === "June") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (November === "November") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (September === "September") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+         
+         
+
+       
+
+          swal(`คะแนนที่ได้ = ${scoreCheckbox} / 6`, ``, "success").then(
+            function () {}
+          );
+        //   alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+        $("#formListening2").submit(function (event) {
+          event.preventDefault();
+          var Thanksgiving = $(
+            "input[name='Thanksgiving']:checked"
+          ).val();
+          var February = $(
+            "input[name='February']:checked"
+          ).val();
+          var father = $(
+            "input[name='father']:checked"
+          ).val();
+          var SeptemberAns = $(
+            "input[name='SeptemberAns']:checked"
+          ).val();
+          var before = $(
+            "input[name='before']:checked"
+          ).val();
+          var TomAndGarry = $(
+            "input[name='TomAndGarry']:checked"
+          ).val();
+        
+          
+       
+         var scoreCheckbox2 = 0;
+          
+      
+          if (Thanksgiving ==="Thanksgiving") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (February === "February") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (father === "father") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (SeptemberAns === "SeptemberAns") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (before === "before") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+          if (TomAndGarry === "TomAndGarry") {
+            scoreCheckbox2 = scoreCheckbox2 + 1;
+          }
+         
+         
+
+       
+
+          swal(`คะแนนที่ได้ = ${scoreCheckbox2} / 6`, ``, "success").then(
+            function () {}
+          );
+        //   alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+
+      });
+
+     
+    </script>
+  </body>
+</html>

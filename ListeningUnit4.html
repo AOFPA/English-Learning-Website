@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      h5,
+      h4 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: 'Kanit', sans-serif">
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="unit1.html" class="dropdown-item">UNIT 1</a>
+                        <a href="unit2.html" class="dropdown-item">UNIT 2</a>
+                        <a href="unit3.html" class="dropdown-item">UNIT 3</a>
+                        <a href="unit4.html" class="dropdown-item">UNIT 4</a>
+                        <a href="unit5.html" class="dropdown-item">UNIT 5</a>
+                        <a href="unit6.html" class="dropdown-item">UNIT 6</a>
+                    </div>
+                </div>
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-danger">LISTENING UNIT 4</h5>
+          <h5 class="text-center">
+            ให้ผู้เรียนฟังเสียงจากวิดิโอ และเลือกคำตอบที่ได้กล่าวถึงในวิดิโอ หรือคำที่ผู้เรียนได้ยินจากวิดิโอ
+          </h5>
+
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <p class="text-center">:: VIDEO ::</p>
+              <div class="text-center">
+                <style>
+                    video {
+  width: 100%;
+  height: auto;
+}
+                </style>
+                <video  controls>
+                    <source src="File1/vd_4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+              </div>
+            </div>
+        
+            <form action="" method="POST" id="formListening">
+              <div class="row">
+                <div class="col-lg-12 mt-5">
+                  <h5>เลือกคำตอบที่ผู้เรียนได้ยินจากวิดิโอ</h5>
+                </div>
+               
+                <div class="col-lg-2 mt-2">
+                  biggest
+                  <input
+                    type="checkbox"
+                    id="biggest"
+                    name="biggest"
+                    value="biggest"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  continent
+                  <input
+                    type="checkbox"
+                    id="continent"
+                    name="continent"
+                    value="continent"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  coldest
+                  <input
+                    type="checkbox"
+                    id="coldest"
+                    name="coldest"
+                    value="coldest"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  island
+                  <input
+                    type="checkbox"
+                    id="island"
+                    name="island"
+                    value="island"
+                  />
+                </div>
+
+              
+                <div class="col-lg-2 mt-2">
+                  deepast
+                  <input
+                    type="checkbox"
+                    id="deepast"
+                    name="deepast"
+                    value="deepast"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  largest
+                  <input
+                    type="checkbox"
+                    id="largest"
+                    name="largest"
+                    value="largest"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  longest
+                  <input
+                    type="checkbox"
+                    id="longest"
+                    name="longest"
+                    value="longest"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  lake
+                  <input
+                    type="checkbox"
+                    id="lake"
+                    name="lake"
+                    value="lake"
+                  />
+                </div>
+
+              
+                <div class="col-lg-2 mt-2">
+                  mountain
+                  <input
+                    type="checkbox"
+                    id="mountain"
+                    name="mountain"
+                    value="mountain"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  rainforest
+                  <input
+                    type="checkbox"
+                    id="rainforest"
+                    name="rainforest"
+                    value="rainforest"
+                  />
+                </div>
+
+               
+                <div class="col-lg-2 mt-2">
+                  ocean
+                  <input
+                    type="checkbox"
+                    id="ocean"
+                    name="ocean"
+                    value="ocean"
+                  />
+                </div>
+                <div class="col-lg-2 mt-2">
+                  river
+                  <input
+                    type="checkbox"
+                    id="river"
+                    name="river"
+                    value="river"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-5">
+                ส่งคำตอบ
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+      
+
+       
+        $("#formListening").submit(function (event) {
+          event.preventDefault();
+          var biggest = $(
+            "input[name='biggest']:checked"
+          ).val();
+          var continent = $(
+            "input[name='continent']:checked"
+          ).val();
+          var island = $(
+            "input[name='island']:checked"
+          ).val();
+          var largest = $(
+            "input[name='largest']:checked"
+          ).val();
+          var longest = $(
+            "input[name='longest']:checked"
+          ).val();
+          var rainforest = $(
+            "input[name='rainforest']:checked"
+          ).val();
+          var river = $(
+            "input[name='river']:checked"
+          ).val();
+        // var biggest =  $('#biggest').val();
+        // var continent =  $('#continent').val();
+        // var island =  $('#island').val();
+        // var largest =  $('#largest').val();
+        // var longest =  $('#longest').val();
+        // var rainforest =  $('#rainforest').val();
+        // var river =  $('#river').val();
+        
+            console.log(biggest)
+            console.log(river)
+          // console.log(Ans1);
+          var scoreCheckbox = 0;
+        //   console.log(scoreCheckbox)
+
+          if (biggest ==="biggest") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (continent === "continent") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (island === "island") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (largest === "largest") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (longest === "longest") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (rainforest === "rainforest") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+          if (river === "river") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+
+       
+
+          swal(`คะแนนที่ได้ = ${scoreCheckbox} / 7`, ``, "success").then(
+            function () {}
+          );
+        //   alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+      });
+
+     
+    </script>
+  </body>
+</html>

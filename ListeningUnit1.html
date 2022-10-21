@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      h5,
+      h4 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: 'Kanit', sans-serif">
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
+    >
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <h2 class="m-0 text-primary">
+          <i class="fa fa-book me-3"></i>eLEARNING
+        </h2>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle active"
+              data-bs-toggle="dropdown"
+              >Courses</a
+            >
+            <div class="dropdown-menu fade-down m-0">
+              <a href="unit1.html" class="dropdown-item">UNIT 1</a>
+              <a href="unit2.html" class="dropdown-item">UNIT 2</a>
+              <a href="unit3.html" class="dropdown-item">UNIT 3</a>
+              <a href="unit4.html" class="dropdown-item">UNIT 4</a>
+              <a href="unit5.html" class="dropdown-item">UNIT 5</a>
+              <a href="unit6.html" class="dropdown-item">UNIT 6</a>
+          </div>
+          </div>
+          <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+        </div>
+        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-danger">LISTENING</h5>
+          <h5 class="text-center">
+            ให้ผู้เรียนรู้ฟังเสียง
+            และตอบคำถามข้างล่างเพื่อเป็นการเรียนรู้ทบทวนบทเรียน
+          </h5>
+          <div class="row">
+            <div class="col-lg-4">
+              <h5 class="text-center text-info mt-5 mb-3">art class</h5>
+              <div class="position-relative overflow-hidden text-center">
+                <img
+                  class="img-fluid"
+                  src="img/artclass.jpg"
+                  alt=""
+                  style="max-height: 200px"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-center text-info mt-5 mb-3">cooking class</h5>
+              <div class="position-relative overflow-hidden text-center">
+                <img
+                  class="img-fluid"
+                  src="img/cookingclass.jpg"
+                  alt=""
+                  style="max-height: 200px"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-center text-info mt-5 mb-3">music class</h5>
+              <div class="position-relative overflow-hidden text-center">
+                <img
+                  class="img-fluid"
+                  src="img/musicclass.jpg"
+                  alt=""
+                  style="max-height: 200px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <p class="text-danger">:: SOUND ::</p>
+              </div>
+              <div class="text-center">
+                <audio controls>
+                  <source
+                    src="sound/SC3e_SB2_U01_Listening.mp3"
+                    type="audio/mpeg"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p class="mt-3" style="font-size: 18px">
+                1. ให้ผู้เรียนฟังเสียงจากข้างบน แล้วให้ตอบคำถามด้านล่าง
+         
+                <ul>
+                  <li> หากกิจกรรมนั้นทำโดย โจแอน (Joanne) ให้ตอบ J <br /></li>
+                  <li>หากกิจกรรมนั้นทำโดย ทอม (Tom) ให้ตอบ T <br /></li>
+                  <li>หากมีทั้งทอมและ โจแอน ให้ตอบ T,J</li>
+                </ul>
+               
+                
+                
+              </p>
+              <form id="form_id" action="" method="POST">
+                <div class="row mt-3">
+                  <div class="col-lg-4 mt-3">
+                    1. Italy
+                    <input
+                      type="text"
+                      name="Italy"
+                      value="J"
+                      disabled
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 1."
+                      aria-label="Username"
+                    />
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    2. Spain
+                    <input
+                      type="text"
+                      name="Spain"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 2."
+                      aria-label="Username"
+                    />
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    3. Florida
+                    <input
+                      type="text"
+                      name="Florida"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 3."
+                      aria-label="Username"
+                    />
+                  </div>
+
+                  <div class="col-lg-4 mt-3">
+                    4. art
+                    <input
+                      type="text"
+                      name="art"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 4."
+                      aria-label="Username"
+                    />
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    5. cooking
+                    <input
+                      type="text"
+                      name="cooking"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 5."
+                      aria-label="Username"
+                    />
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    6. languages
+                    <input
+                      type="text"
+                      name="languages"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 6."
+                      aria-label="Username"
+                    />
+                  </div>
+
+                  <div class="col-lg-4 mt-3">
+                    7. Italian
+                    <input
+                      type="text"
+                      name="Italian"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 7."
+                      aria-label="Username"
+                    />
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    8. Portuguese
+                    <input
+                      type="text"
+                      name="Portuguese"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 8."
+                      aria-label="Username"
+                    />
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    9. Japanese
+                    <input
+                      type="text"
+                      name="Japanese"
+                      class="form-control"
+                      placeholder="คำตอบข้อที่ 9."
+                      aria-label="Username"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-5">
+                  ส่งคำตอบ
+                </button>
+              </form>
+              <form action="" method="POST" id="formQuestion">
+                <div class="row mt-5">
+                  <div class="col-lg-12">
+                    <hr />
+                    <p style="font-size: 18px">
+                      2. ให้ผู้เรียนฟังเสียงจากข้างบนแล้วตอบคำถามต่อไปนี้
+                      <br />
+                      โปรดเลือกคำตอบที่ถูกต้อง
+                      <br />
+                    </p>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    1. How did Joanne describe her vacation?
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Ans1"
+                      name="Ans1"
+                    >
+                      <option value="">โปรดเลือกคำตอบ</option>
+                      <option value="f">It was wonderful.</option>
+                      <option value="c">Language.</option>
+                      <option value="b">To take cooking classes.</option>
+                      <option value="d">No, they didn't.</option>
+                      <option value="e">
+                        They visited their grandparents in Florida.
+                      </option>
+                      <option value="a">To take were cooking classes.</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    2. What does she want to study this semester?
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Ans2"
+                      name="Ans2"
+                    >
+                      <option value="">โปรดเลือกคำตอบ</option>
+                      <option value="f">It was wonderful.</option>
+                      <option value="c">Language.</option>
+                      <option value="b">To take cooking classes.</option>
+                      <option value="d">No, they didn't.</option>
+                      <option value="e">
+                        They visited their grandparents in Florida.
+                      </option>
+                      <option value="a">To take were cooking classes.</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    3. Why did Tom go to Europe?
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Ans3"
+                      name="Ans3"
+                    >
+                      <option value="">โปรดเลือกคำตอบ</option>
+                      <option value="f">It was wonderful.</option>
+                      <option value="c">Language.</option>
+                      <option value="b">To take cooking classes.</option>
+                      <option value="d">No, they didn't.</option>
+                      <option value="e">
+                        They visited their grandparents in Florida.
+                      </option>
+                      <option value="a">To take were cooking classes.</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    4. Did Tom and Joanne travel to other places in Europe?
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Ans4"
+                      name="Ans4"
+                    >
+                      <option value="">โปรดเลือกคำตอบ</option>
+                      <option value="f">It was wonderful.</option>
+                      <option value="c">Language.</option>
+                      <option value="b">To take cooking classes.</option>
+                      <option value="d">No, they didn't.</option>
+                      <option value="e">
+                        They visited their grandparents in Florida.
+                      </option>
+                      <option value="a">To take were cooking classes.</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    5. Who did they visit when they returned to the US?
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Ans5"
+                      name="Ans5"
+                    >
+                      <option value="">โปรดเลือกคำตอบ</option>
+                      <option value="f">It was wonderful.</option>
+                      <option value="c">Language.</option>
+                      <option value="b">To take cooking classes.</option>
+                      <option value="d">No, they didn't.</option>
+                      <option value="e">
+                        They visited their grandparents in Florida.
+                      </option>
+                      <option value="a">To take were cooking classes.</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mt-3">
+                    6. Why does Tom want to go to Brazil?
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="Ans6"
+                      name="Ans6"
+                    >
+                      <option value="">โปรดเลือกคำตอบ</option>
+                      <option value="f">It was wonderful.</option>
+                      <option value="c">Language.</option>
+                      <option value="b">To take cooking classes.</option>
+                      <option value="d">No, they didn't.</option>
+                      <option value="e">
+                        They visited their grandparents in Florida.
+                      </option>
+                      <option value="a">To take were cooking classes.</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-5">
+                  ส่งคำตอบ
+                </button>
+              </form>
+              <hr />
+              <!-- Listening Plus -->
+              <h5 class="text-danger">LISTENING PLUS</h5>
+              <form action="" method="POST" id="formListeningPlus">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p class="text-danger text-center">:: SOUND ::</p>
+                    <div class="text-center">
+                      <audio controls>
+                        <source
+                          src="sound/ListeningPlus.mp3"
+                          type="audio/mpeg"
+                        />
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 mt-2">
+                    1. Tom recognized Lisa when he saw her.
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    TRUE
+                    <input
+                      type="checkbox"
+                      id="checkbox1"
+                      name="datacheckbox1_true"
+                      value="datacheckbox1_true"
+                    />
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    FALSE
+                    <input
+                      type="checkbox"
+                      id="checkbox1"
+                      name="datacheckbox1_true"
+                      value="datacheckbox1_false"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 mt-2">
+                    2. Tom and Lisa were in the same class last semester.
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    TRUE
+                    <input
+                      type="checkbox"
+                      id="checkbox2"
+                      name="datacheckbox2_true"
+                      value="datacheckbox2_true"
+                    />
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    FALSE
+                    <input
+                      type="checkbox"
+                      id="checkbox2"
+                      name="datacheckbox2_true"
+                      value="datacheckbox2_false"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 mt-2">
+                    3. Lisa and Joanne met in Europe.
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    TRUE
+                    <input
+                      type="checkbox"
+                      id="checkbox3"
+                      name="datacheckbox3_true"
+                      value="datacheckbox3_true"
+                    />
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    FALSE
+                    <input
+                      type="checkbox"
+                      id="checkbox3"
+                      name="datacheckbox3_true"
+                      value="datacheckbox3_false"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 mt-2">
+                    4. Lisa probably saw Tom in a hostel.
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    TRUE
+                    <input
+                      type="checkbox"
+                      id="checkbox4"
+                      name="datacheckbox4_true"
+                      value="datacheckbox4_true"
+                    />
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    FALSE
+                    <input
+                      type="checkbox"
+                      id="checkbox4"
+                      name="datacheckbox4_true"
+                      value="datacheckbox4_false"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 mt-2">
+                    5. Lisa didn't like Barcelona very much.
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    TRUE
+                    <input
+                      type="checkbox"
+                      id="checkbox5"
+                      name="datacheckbox5_true"
+                      value="datacheckbox5_true"
+                    />
+                  </div>
+                  <div class="col-lg-2 mt-2">
+                    FALSE
+                    <input
+                      type="checkbox"
+                      id="checkbox5"
+                      name="datacheckbox5_true"
+                      value="datacheckbox5_false"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-5">
+                  ส่งคำตอบ
+                </button>
+              </form>
+              <!-- END LISTENING PLUS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#form_id").submit(function (event) {
+          event.preventDefault();
+          var Italy = $("input[name='Italy']", this).val();
+          var Spain = $("input[name='Spain']", this).val();
+          var Florida = $("input[name='Florida']", this).val();
+          var art = $("input[name='art']", this).val();
+          var cooking = $("input[name='cooking']", this).val();
+          var languages = $("input[name='languages']", this).val();
+          var Italian = $("input[name='Italian']", this).val();
+          var Portuguese = $("input[name='Portuguese']", this).val();
+          var Japanese = $("input[name='Japanese']", this).val();
+          var score = 0;
+
+          if (Italy === "J") {
+            score = score + 1;
+          }
+
+          if (Spain === "T") {
+            score = score + 1;
+          }
+
+          if (Florida === "T,J" || Florida === "J,T") {
+            score = score + 1;
+          }
+
+          if (art === "J") {
+            score = score + 1;
+          }
+
+          if (cooking === "T") {
+            score = score + 1;
+          }
+
+          if (languages === "J,T" || languages === "T,J") {
+            score = score + 1;
+          }
+
+          if (Italian === "J") {
+            score = score + 1;
+          }
+
+          if (Portuguese === "T") {
+            score = score + 1;
+          }
+
+          if (Japanese === "T") {
+            score = score + 1;
+          }
+
+          swal(`คะแนนที่ได้ = ${score} / 9`, ``, "success").then(
+            function () {}
+          );
+        });
+        //Form Question ข้อ 3 ใหญ่ในหนังสือ
+        $("#formQuestion").submit(function (event) {
+          event.preventDefault();
+          var Ans1 = $("#Ans1 option:selected").val();
+          var Ans2 = $("#Ans2 option:selected").val();
+          var Ans3 = $("#Ans3 option:selected").val();
+          var Ans4 = $("#Ans4 option:selected").val();
+          var Ans5 = $("#Ans5 option:selected").val();
+          var Ans6 = $("#Ans6 option:selected").val();
+
+          // console.log(Ans1);
+          var scoreAns = 0;
+
+          if (Ans1 === "f") {
+            scoreAns = scoreAns + 1;
+          }
+
+          if (Ans2 === "c") {
+            scoreAns = scoreAns + 1;
+          }
+
+          if (Ans3 === "b") {
+            scoreAns = scoreAns + 1;
+          }
+
+          if (Ans4 === "d") {
+            scoreAns = scoreAns + 1;
+          }
+
+          if (Ans5 === "e") {
+            scoreAns = scoreAns + 1;
+          }
+
+          if (Ans6 === "a") {
+            scoreAns = scoreAns + 1;
+          }
+
+          swal(`คะแนนที่ได้ = ${scoreAns} / 6`, ``, "success").then(
+            function () {}
+          );
+          // alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+
+        //Form Listening Plus ข้อ 4 ใหญ่ในหนังสือ
+        $("#formListeningPlus").submit(function (event) {
+          event.preventDefault();
+          // var datacheckbox1_true = $("input[name='datacheckbox1_true']", this).val();
+          var datacheckbox1_true = $(
+            "input[name='datacheckbox1_true']:checked"
+          ).val();
+          var datacheckbox2_true = $(
+            "input[name='datacheckbox2_true']:checked"
+          ).val();
+          var datacheckbox3_true = $(
+            "input[name='datacheckbox3_true']:checked"
+          ).val();
+          var datacheckbox4_true = $(
+            "input[name='datacheckbox4_true']:checked"
+          ).val();
+          var datacheckbox5_true = $(
+            "input[name='datacheckbox5_true']:checked"
+          ).val();
+
+          // console.log(Ans1);
+          var scoreCheckbox = 0;
+
+          if (datacheckbox1_true === "datacheckbox1_false") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+
+          if (datacheckbox2_true === "datacheckbox2_false") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+
+          if (datacheckbox3_true === "datacheckbox3_false") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+
+          if (datacheckbox4_true === "datacheckbox4_true") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+
+          if (datacheckbox5_true === "datacheckbox5_false") {
+            scoreCheckbox = scoreCheckbox + 1;
+          }
+
+          swal(`คะแนนที่ได้ = ${scoreCheckbox} / 5`, ``, "success").then(
+            function () {}
+          );
+          // alert("คุณได้คะแนน = " + score);
+
+          // var email = $("input[name='email']", this).val();
+        });
+      });
+
+      $(document).on("click", 'input[id="checkbox1"]', function () {
+        $('input[id="checkbox1"]').not(this).prop("checked", false);
+      });
+
+      $(document).on("click", 'input[id="checkbox2"]', function () {
+        $('input[id="checkbox2"]').not(this).prop("checked", false);
+      });
+      $(document).on("click", 'input[id="checkbox3"]', function () {
+        $('input[id="checkbox3"]').not(this).prop("checked", false);
+      });
+      $(document).on("click", 'input[id="checkbox4"]', function () {
+        $('input[id="checkbox4"]').not(this).prop("checked", false);
+      });
+      $(document).on("click", 'input[id="checkbox5"]', function () {
+        $('input[id="checkbox5"]').not(this).prop("checked", false);
+      });
+    </script>
+  </body>
+</html>
